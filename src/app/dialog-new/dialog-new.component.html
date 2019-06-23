@@ -1,0 +1,30 @@
+<div class="dialog" [ngStyle]="getStyle()">
+  <div class="header">
+    <h3>Nuevo</h3>
+    <div class="flex"></div>
+    <button type="button" (click)="close()">x</button>
+  </div>
+  <form [formGroup]="form">
+    <label for="dia">Dia</label>
+    <input formControlName="dia" type="number"  name="lat" id="dia">
+
+    <label for="lat">Lat</label>
+    <input  type="number" [value]="l.lat" disabled name="lat" id="lat">
+
+    <label for="lng">Lng</label>
+    <input  type="number" [value]="l.lng" disabled name="lat" id="lng">
+
+    <label for="viento">Viento</label>
+    <input formControlName="viento" type="number" name="viento" id="viento">
+
+    <label for="humedad">Humedad</label>
+    <input formControlName="humedad" type="number" name="humedad" id="humedad">
+
+    <label for="persion">Precipitacion</label>
+    <input formControlName="precipitacion" type="number" name="presion" id="persion">
+
+    <label for="temperatura">Temperatura</label>
+    <input formControlName="temperatura" type="number" name="temperatura" id="temperatura">
+    <button type="button" (click)="submit()">Aceptar</button>
+  </form>
+</div>

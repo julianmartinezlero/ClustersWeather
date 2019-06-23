@@ -1,0 +1,25 @@
+<h3>{{title}}</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Dia</th>
+      <th>Viento</th>
+      <th>Humedad</th>
+      <th>Precip.</th>
+      <th>Temp.</th>
+      <th>Lat.</th>
+      <th>Lng.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dat of datas">
+      <td>{{dat.dia}}</td>
+      <td class="number">{{dat.viento}}</td>
+      <td class="number">{{dat.humedad}}</td>
+      <td class="number">{{dat.precipitacion}}</td>
+      <td class="number">{{dat.temperatura}}</td>
+      <td class="number">{{dat.lat}}</td>
+      <td class="number">{{dat.lng}}</td>
+    </tr>
+  </tbody>
+</table>
